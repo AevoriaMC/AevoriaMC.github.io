@@ -10,12 +10,12 @@
     <div class="container">
         <div class="form-wrapper">
             <div class="form-header">
-                <h1>Aevoria Tickets</h1>
+                <h1>Aevoria Support</h1>
             </div>
             
             <form class="contact-form" netlify>
                 <div class="form-group">
-                    <label for="name">What is your name?</label>
+                    <label for="name">What is your minecraft username?</label>
                     <input type="text" id="name" name="name" required>
                 </div>
 
@@ -34,26 +34,16 @@
                     <textarea id="issue" name="message" rows="6" required placeholder="Please describe your issue or message in detail..."></textarea>
                 </div>
 
-                <div class="form-group">
-                    <label for="ticket-type">Ticket Type</label>
-                    <select id="ticket-type" name="ticket_type" required>
-                        <option value="">Select ticket type</option>
-                        <option value="report">Report</option>
-                        <option value="appeal">Appeal</option>
-                        <option value="support">Support</option>
-                    </select>
-                </div>
-
                 <input type="hidden" name="_next" value="/thank-you.html">
 
                 <button type="submit" class="submit-btn">
-                    <span class="btn-text">Send Message</span>
+                    <span class="btn-text">Submit Ticket</span>
                     <span class="btn-icon">→</span>
                 </button>
             </form>
 
             <div class="form-footer">
-                <p>We typically respond within 24 hours</p>
+                <p>We typically respond within 48 hours</p>
             </div>
         </div>
     </div>
