@@ -15,34 +15,36 @@
             
             <form class="contact-form" action="https://formspree.io/f/xnnberpv" method="POST">
                 <div class="form-group">
-                    <label for="name">What is your username?</label>
+                    <label for="name">What is your name?</label>
                     <input type="text" id="name" name="name" required>
                 </div>
 
                 <div class="form-group">
                     <label for="email">What is your email?</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="_replyto" required>
                 </div>
 
                 <div class="form-group">
                     <label for="subject">What is the subject?</label>
-                    <input type="text" id="subject" name="subject" required>
+                    <input type="text" id="subject" name="_subject" required>
                 </div>
 
                 <div class="form-group">
                     <label for="issue">What is your issue?</label>
-                    <textarea id="issue" name="issue" rows="6" required placeholder="Please describe your issue or message in detail..."></textarea>
+                    <textarea id="issue" name="message" rows="6" required placeholder="Please describe your issue or message in detail..."></textarea>
                 </div>
 
                 <div class="form-group">
                     <label for="ticket-type">Ticket Type</label>
-                    <select id="ticket-type" name="ticket-type" required>
+                    <select id="ticket-type" name="ticket_type" required>
                         <option value="">Select ticket type</option>
                         <option value="report">Report</option>
                         <option value="appeal">Appeal</option>
                         <option value="support">Support</option>
                     </select>
                 </div>
+
+                <input type="hidden" name="_next" value="thank-you.html">
 
                 <button type="submit" class="submit-btn">
                     <span class="btn-text">Submit Ticket</span>
