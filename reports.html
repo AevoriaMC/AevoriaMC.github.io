@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>Aevoria Reports</h1>
+                <p>Please provide clips/image using links. For example Google Drive.</p>
+            </div>
+            
+            <form class="contact-form" netlify>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Your Minecraft Username</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Reported Usernames</label>
+                    <input type="text" id="name" name="name" required placeholder="The username(s) of the player(s) you are reporting...">
+                </div>
+
+                <div class="form-group">
+                    <label for="issue">Description</label>
+                    <textarea id="issue" name="message" rows="6" required placeholder="Please enter the details of your request. A member of our support staff will respond as soon as possible."></textarea>
+                </div>
+
+                <input type="hidden" name="_next" value="/thank-you.html">
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Submit Ticket</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </form>
+
+            <div class="form-footer">
+                <p>We typically respond within 48 hours</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
