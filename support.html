@@ -25,10 +25,24 @@
                     <input type="text" id="name" name="name" required>
                 </div>
 
+                <div class="form-group">
+                    <label for="name">Reported Usernames</label>
+                    <input type="text" id="name" name="name" placeholder="If you are reporting another player please provide their username(s) here.">
+                </div>
 
                 <div class="form-group">
                     <label for="issue">Description</label>
                     <textarea id="issue" name="message" rows="6" required placeholder="Please enter the details of your request. A member of our support staff will respond as soon as possible."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="ticket-type">Ticket Category</label>
+                    <select id="ticket-type" name="ticket_type" required>
+                        <option value=""> - </option>
+                        <option value="support">Support</option>
+                        <option value="report">Report</option>
+                        <option value="appeal">Appeal</option>
+                    </select>
                 </div>
 
                 <input type="hidden" name="_next" value="/thank-you.html">
