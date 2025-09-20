@@ -11,27 +11,24 @@
         <div class="form-wrapper">
             <div class="form-header">
                 <h1>Aevoria Support</h1>
+                <p>Please provide clips/images using links. For example Google Drive.</p>
             </div>
             
             <form class="contact-form" netlify>
                 <div class="form-group">
-                    <label for="name">What is your minecraft username?</label>
+                    <label for="email">Your Email Address</label>
+                    <input type="email" id="email" name="_replyto" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="name">Your Minecraft Username</label>
                     <input type="text" id="name" name="name" required>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">What is your email?</label>
-                    <input type="email" id="email" name="_replyto" required>
-                </div>
 
                 <div class="form-group">
-                    <label for="subject">What is the subject?</label>
-                    <input type="text" id="subject" name="_subject" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="issue">What is your issue?</label>
-                    <textarea id="issue" name="message" rows="6" required placeholder="Please describe your issue or message in detail..."></textarea>
+                    <label for="issue">Description</label>
+                    <textarea id="issue" name="message" rows="6" required placeholder="Please enter the details of your request. A member of our support staff will respond as soon as possible."></textarea>
                 </div>
 
                 <input type="hidden" name="_next" value="/thank-you.html">
