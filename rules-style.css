@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rules-wrapper {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    padding: 40px;
+    border: 1px solid #404040;
+}
+
+.rules-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.rules-header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.rules-header hr {
+    border: none;
+    height: 1px;
+    background-color: #404040;
+    margin: 20px 0;
+}
+
+.agreement-section {
+    text-align: left;
+    margin: 30px 0;
+}
+
+.agreement-section h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.agreement-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.agreement-section li {
+    margin-bottom: 8px;
+}
+
+.agreement-section a {
+    color: #66b3ff;
+    text-decoration: none;
+}
+
+.agreement-section a:hover {
+    text-decoration: underline;
+}
+
+.agreement-section p {
+    color: #ffcc66;
+    font-weight: 500;
+}
+
+.rules-content {
+    text-align: left;
+}
+
+.rule-section {
+    margin-bottom: 40px;
+}
+
+.rule-section h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #404040;
+}
+
+.rule-item {
+    margin-bottom: 25px;
+}
+
+.rule-item h3 {
+    color: #cccccc;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.rule-item ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.rule-item li {
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+
+.additional-notes {
+    border-top: 2px solid #404040;
+    padding-top: 30px;
+}
+
+.note-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #333333;
+    border-radius: 6px;
+    border-left: 4px solid #66b3ff;
+}
+
+.note-item p {
+    color: #e0e0e0;
+    margin: 0;
+}
+
+.note-item strong {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+    
+    .rules-wrapper {
+        padding: 30px 20px;
+    }
+    
+    .rules-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .rule-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .rule-item h3 {
+        font-size: 1rem;
+    }
+}
