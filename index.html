@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <div class="form-header">
+                <h1>Aevoria Tickets</h1>
+            </div>
+            
+            <form class="contact-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">What is your username?</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">What is your email?</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">What is the subject?</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="issue">What is your issue?</label>
+                    <textarea id="issue" name="issue" rows="6" required placeholder="Please describe your issue or message in detail..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="ticket-type">Ticket Type</label>
+                    <select id="ticket-type" name="ticket-type" required>
+                        <option value="">Select ticket type</option>
+                        <option value="report">Report</option>
+                        <option value="appeal">Appeal</option>
+                        <option value="support">Support</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Submit Ticket</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </form>
+
+            <div class="form-footer">
+                <p>We typically respond within 24 hours</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
